@@ -157,5 +157,4 @@
     - UnCheckedException: 실행하고 난 후에 알 수 있는 예외를 말하며 따로 예외 처리를 하지 않아도 됨
     - RuntimeException은 UnCheckedException을 상속한 클래스이고, RuntimeException이 아닌 것은 CheckedException을 상속한 클래스임
 
-  - Optional API 
-    
+  - Optional API
