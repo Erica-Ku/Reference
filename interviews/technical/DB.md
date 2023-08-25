@@ -10,21 +10,21 @@
     - DML(조작어): 데이터베이스 내의 자료 검색, 삽입, 갱신, 삭제를 위한 언어(select, insert, update, delete)
     - DCL(제어어): 데이터에 대해 무결성 유지, 병행 수행 제어, 보호와 관리를 위한 언어(commit, rollback, grant, revoke)
 
-  - SELECT 쿼리의 수행 순서
-    1. FROM: 각 테이블 확인
-    2. ON: JOIN 조건 확인
-    3. JOIN: 데이터가 SET으로 모아지게 되며 서브쿼리도 포함되어 임시 테이블을 만들 수 있게 도와줌  
-    2. WHERE
+  - SELECT 쿼리
+    - FROM: 각 테이블 확인
+    - ON: JOIN 조건 확인
+    - JOIN: 데이터가 SET으로 모아지게 되며 서브쿼리도 포함되어 임시 테이블을 만들 수 있게 도와줌  
+    - WHERE
        - 데이터셋을 형성하게 되면 WHERE의 조건이 개별 행에 적용됨
        - WHERE절의 제약 조건은 FROM절로 가져온 테이블에 적용될 수 있음
-    3. GROUP BY
+    - GROUP BY
        - WHERE의 조건 적용 후 나머지 행은 GROUP BY절에 지정된 열의 공통 값을 기준으로 그룹화됨
        - 쿼리에 집계 기능이 있는 경우에만 사용됨
-    4. HAVING: GROUP BY절이 쿼리에 있을 경우 HAVING절의 제약 조건이 그룹화된 행에 적용됨
-    5. SELECT: SELECT에 표현된 식이 마지막으로 적용됨
-    6. DISTINCT: 표현된 행에서 중복된 행은 삭제
-    7. ORDER BY: 지정된 데이터를 기준으로 오름차순, 내림차순 지정
-    8. LIMIT: LIMIT에서 벗어나는 행들은 제외되어 출력됨
+    - HAVING: GROUP BY절이 쿼리에 있을 경우 HAVING절의 제약 조건이 그룹화된 행에 적용됨
+    - SELECT: SELECT에 표현된 식이 마지막으로 적용됨
+    - DISTINCT: 표현된 행에서 중복된 행은 삭제
+    - ORDER BY: 지정된 데이터를 기준으로 오름차순, 내림차순 지정
+    - LIMIT: LIMIT에서 벗어나는 행들은 제외되어 출력됨
 
   - 트리거(Trigger)
     - 특정 테이블에 대한 이벤트에 반응해 INSERT, DELETE, UPDATE 같은 DML문이 수행되었을 때, 데이터베이스에서 자동으로 동작하도록 작성된 프로그램
