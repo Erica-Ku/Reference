@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+  
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: #ccc;
+    border: 1px solid #000;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+  
+.card.flipped {
+    background-color: #ffcc00;
+}
+  
+.front, .back {
+    display: none;
+    padding-top: 50%;
+}
+  
+.front.visible {
+    display: block;
+}
+  
+.card.flipped .front {
+    display: none;
+}
+  
+.card.flipped .back {
+    display: block;
+}
+  
+.card:hover {
+    transform: scale(1.1);
+}

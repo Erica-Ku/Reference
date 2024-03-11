@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="card.js"></script>
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="flipCard(1)">
+          <div class="front visible"><h1>1</h1></div>
+          <div class="back">카드 1 뒷면</div>
+        </div>
+        <div class="card" onclick="flipCard(2)">
+          <div class="front visible"><h1>2</h1></div>
+          <div class="back">카드 2 뒷면</div>
+        </div>
+        <div class="card" onclick="flipCard(3)">
+          <div class="front visible"><h1>3</h1></div>
+          <div class="back">카드 3 뒷면</div>
+        </div>
+    </div>
+    <div id="cardText"></div>
+</body>
+</html>
